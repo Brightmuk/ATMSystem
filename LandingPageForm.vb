@@ -4,6 +4,9 @@
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+        Me.Visible = False
+        Dim create As New CreateAccountForm
+        create.Show()
 
     End Sub
 
