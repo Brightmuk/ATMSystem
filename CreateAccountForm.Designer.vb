@@ -65,7 +65,7 @@ Partial Class CreateAccountForm
         Me.pnlTheme.ForeColor = System.Drawing.Color.White
         Me.pnlTheme.Location = New System.Drawing.Point(-2, -1)
         Me.pnlTheme.Name = "pnlTheme"
-        Me.pnlTheme.Size = New System.Drawing.Size(801, 450)
+        Me.pnlTheme.Size = New System.Drawing.Size(805, 456)
         Me.pnlTheme.TabIndex = 0
         '
         'lblLogin
