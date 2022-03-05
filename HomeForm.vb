@@ -11,6 +11,8 @@
     End Sub
 
     Private Sub btnDeposit_Click(sender As Object, e As EventArgs) Handles btnDeposit.Click
+        Dim deposit As New DepositForm
+        deposit.Show()
 
     End Sub
 
