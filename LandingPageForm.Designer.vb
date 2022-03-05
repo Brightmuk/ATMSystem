@@ -26,10 +26,10 @@ Partial Class LandingPageForm
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblNoAccount = New System.Windows.Forms.Label()
-        Me.lblAccountNo = New System.Windows.Forms.Label()
+        Me.lblIdNumber = New System.Windows.Forms.Label()
         Me.lblPin = New System.Windows.Forms.Label()
         Me.txtPin = New System.Windows.Forms.TextBox()
-        Me.txtUsername = New System.Windows.Forms.TextBox()
+        Me.txtId = New System.Windows.Forms.TextBox()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.pnlHome.SuspendLayout()
         Me.SuspendLayout()
@@ -40,10 +40,10 @@ Partial Class LandingPageForm
         Me.pnlHome.Controls.Add(Me.btnLogin)
         Me.pnlHome.Controls.Add(Me.Label1)
         Me.pnlHome.Controls.Add(Me.lblNoAccount)
-        Me.pnlHome.Controls.Add(Me.lblAccountNo)
+        Me.pnlHome.Controls.Add(Me.lblIdNumber)
         Me.pnlHome.Controls.Add(Me.lblPin)
         Me.pnlHome.Controls.Add(Me.txtPin)
-        Me.pnlHome.Controls.Add(Me.txtUsername)
+        Me.pnlHome.Controls.Add(Me.txtId)
         Me.pnlHome.Controls.Add(Me.lblWelcome)
         Me.pnlHome.Location = New System.Drawing.Point(0, 0)
         Me.pnlHome.Name = "pnlHome"
@@ -86,16 +86,16 @@ Partial Class LandingPageForm
         Me.lblNoAccount.TabIndex = 5
         Me.lblNoAccount.Text = "Dont have an account?"
         '
-        'lblAccountNo
+        'lblIdNumber
         '
-        Me.lblAccountNo.AutoSize = True
-        Me.lblAccountNo.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblAccountNo.ForeColor = System.Drawing.Color.White
-        Me.lblAccountNo.Location = New System.Drawing.Point(290, 194)
-        Me.lblAccountNo.Name = "lblAccountNo"
-        Me.lblAccountNo.Size = New System.Drawing.Size(115, 14)
-        Me.lblAccountNo.TabIndex = 4
-        Me.lblAccountNo.Text = "Account Number"
+        Me.lblIdNumber.AutoSize = True
+        Me.lblIdNumber.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblIdNumber.ForeColor = System.Drawing.Color.White
+        Me.lblIdNumber.Location = New System.Drawing.Point(328, 194)
+        Me.lblIdNumber.Name = "lblIdNumber"
+        Me.lblIdNumber.Size = New System.Drawing.Size(77, 14)
+        Me.lblIdNumber.TabIndex = 4
+        Me.lblIdNumber.Text = "Id Number"
         '
         'lblPin
         '
@@ -120,16 +120,16 @@ Partial Class LandingPageForm
         Me.txtPin.Size = New System.Drawing.Size(100, 29)
         Me.txtPin.TabIndex = 2
         '
-        'txtUsername
+        'txtId
         '
-        Me.txtUsername.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtUsername.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtUsername.ForeColor = System.Drawing.Color.White
-        Me.txtUsername.Location = New System.Drawing.Point(421, 187)
-        Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(100, 29)
-        Me.txtUsername.TabIndex = 1
+        Me.txtId.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.txtId.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.txtId.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtId.ForeColor = System.Drawing.Color.White
+        Me.txtId.Location = New System.Drawing.Point(421, 187)
+        Me.txtId.Name = "txtId"
+        Me.txtId.Size = New System.Drawing.Size(100, 29)
+        Me.txtId.TabIndex = 1
         '
         'lblWelcome
         '
@@ -160,9 +160,9 @@ Partial Class LandingPageForm
     Friend WithEvents lblWelcome As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents lblNoAccount As Label
-    Friend WithEvents lblAccountNo As Label
+    Friend WithEvents lblIdNumber As Label
     Friend WithEvents lblPin As Label
     Friend WithEvents txtPin As TextBox
-    Friend WithEvents txtUsername As TextBox
+    Friend WithEvents txtId As TextBox
     Friend WithEvents btnLogin As Button
 End Class
