@@ -2,7 +2,9 @@
 Imports MySql.Data.MySqlClient
 
 Public Class LandingPageForm
-    Dim conn As New MySqlConnection
+    Public Shared Property conn As New MySqlConnection(connectionString:="server=localhost;user id=root;password=beatsbydre;database=atmdb")
+
+    Public Shared Property IdNumber As String
     Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblWelcome.Click
 
     End Sub
@@ -17,7 +19,6 @@ Public Class LandingPageForm
     Private Sub btnLogin_Click(sender As Object, e As EventArgs) Handles btnLogin.Click
 
         If Not conn Is Nothing Then conn.Close()
-        conn.ConnectionString = "server=localhost;user id=root;password=beatsbydre;database=atmdb"
 
         Try
             conn.Open()
@@ -32,6 +33,7 @@ Public Class LandingPageForm
             If count = 0 Then
                 MessageBox.Show("Wrong Id number or Pin code!")
             Else
+                IdNumber = txtId.Text
                 Me.Visible = False
                 Dim home As New HomeForm
                 home.Show()
@@ -40,7 +42,7 @@ Public Class LandingPageForm
         Catch ex As Exception
             MessageBox.Show(ex.Message)
         End Try
-
+        conn.Close()
     End Sub
 
     Private Sub txtUsername_TextChanged(sender As Object, e As EventArgs) Handles txtId.TextChanged

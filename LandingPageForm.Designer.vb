@@ -20,9 +20,11 @@ Partial Class LandingPageForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(LandingPageForm))
         Me.pnlHome = New System.Windows.Forms.Panel()
+        Me.pcLogo = New System.Windows.Forms.PictureBox()
         Me.btnLogin = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lblNoAccount = New System.Windows.Forms.Label()
@@ -32,11 +34,14 @@ Partial Class LandingPageForm
         Me.txtId = New System.Windows.Forms.TextBox()
         Me.lblWelcome = New System.Windows.Forms.Label()
         Me.pnlHome.SuspendLayout()
+        CType(Me.pcLogo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'pnlHome
         '
+        Me.pnlHome.AutoSize = True
         Me.pnlHome.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.pnlHome.Controls.Add(Me.pcLogo)
         Me.pnlHome.Controls.Add(Me.btnLogin)
         Me.pnlHome.Controls.Add(Me.Label1)
         Me.pnlHome.Controls.Add(Me.lblNoAccount)
@@ -50,9 +55,19 @@ Partial Class LandingPageForm
         Me.pnlHome.Size = New System.Drawing.Size(812, 452)
         Me.pnlHome.TabIndex = 0
         '
+        'pcLogo
+        '
+        Me.pcLogo.Image = CType(resources.GetObject("pcLogo.Image"), System.Drawing.Image)
+        Me.pcLogo.Location = New System.Drawing.Point(88, 69)
+        Me.pcLogo.Name = "pcLogo"
+        Me.pcLogo.Size = New System.Drawing.Size(81, 73)
+        Me.pcLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.pcLogo.TabIndex = 8
+        Me.pcLogo.TabStop = False
+        '
         'btnLogin
         '
-        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnLogin.BackColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogin.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.btnLogin.ForeColor = System.Drawing.Color.White
@@ -68,7 +83,7 @@ Partial Class LandingPageForm
         Me.Label1.AutoSize = True
         Me.Label1.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Label1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(457, 403)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(83, 14)
@@ -135,7 +150,7 @@ Partial Class LandingPageForm
         '
         Me.lblWelcome.AutoSize = True
         Me.lblWelcome.Font = New System.Drawing.Font("Verdana", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblWelcome.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblWelcome.Location = New System.Drawing.Point(188, 80)
         Me.lblWelcome.Name = "lblWelcome"
         Me.lblWelcome.Size = New System.Drawing.Size(493, 45)
@@ -146,13 +161,16 @@ Partial Class LandingPageForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(811, 450)
         Me.Controls.Add(Me.pnlHome)
         Me.Name = "LandingPageForm"
         Me.Text = "Form1"
         Me.pnlHome.ResumeLayout(False)
         Me.pnlHome.PerformLayout()
+        CType(Me.pcLogo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -165,4 +183,5 @@ Partial Class LandingPageForm
     Friend WithEvents txtPin As TextBox
     Friend WithEvents txtId As TextBox
     Friend WithEvents btnLogin As Button
+    Friend WithEvents pcLogo As PictureBox
 End Class

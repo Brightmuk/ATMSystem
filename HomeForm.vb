@@ -17,8 +17,33 @@
     End Sub
 
     Private Sub btnBalanceEnquiry_Click(sender As Object, e As EventArgs) Handles btnBalanceEnquiry.Click
-        Dim balance As New BalanceForm
+
+        Dim balance As New BalanceForm()
         balance.Show()
+
+    End Sub
+
+    Private Sub btnFastCash_Click(sender As Object, e As EventArgs) Handles btnFastCash.Click
+        Dim fastCash As New FastCashForm
+        fastCash.Show()
+
+    End Sub
+
+    Private Sub btnChangePin_Click(sender As Object, e As EventArgs) Handles btnChangePin.Click
+        Dim changePin As New ChangePinForm
+        changePin.Show()
+
+    End Sub
+
+    Private Sub btnWithdrawCash_Click(sender As Object, e As EventArgs) Handles btnWithdrawCash.Click
+        Dim withdraw As New WithdrawForm
+        withdraw.Show()
+
+    End Sub
+
+    Private Sub btnMiniStatement_Click(sender As Object, e As EventArgs) Handles btnMiniStatement.Click
+        Dim mini As MiniStatementForm
+        mini.Show()
 
     End Sub
 End Class
