@@ -23,19 +23,19 @@ Partial Class WithdrawForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.lblBalance = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
         Me.btnWithdraw = New System.Windows.Forms.Button()
         Me.lblWithdraw = New System.Windows.Forms.Label()
         Me.txtAmount = New System.Windows.Forms.TextBox()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.lblBalance)
         Me.Panel1.Controls.Add(Me.btnExit)
         Me.Panel1.Controls.Add(Me.btnWithdraw)
         Me.Panel1.Controls.Add(Me.lblWithdraw)
@@ -45,6 +45,17 @@ Partial Class WithdrawForm
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(801, 448)
         Me.Panel1.TabIndex = 0
+        '
+        'lblBalance
+        '
+        Me.lblBalance.AutoSize = True
+        Me.lblBalance.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.lblBalance.ForeColor = System.Drawing.Color.White
+        Me.lblBalance.Location = New System.Drawing.Point(308, 179)
+        Me.lblBalance.Name = "lblBalance"
+        Me.lblBalance.Size = New System.Drawing.Size(211, 14)
+        Me.lblBalance.TabIndex = 22
+        Me.lblBalance.Text = "Current balance: Ksh. 500,000"
         '
         'btnExit
         '
@@ -89,6 +100,7 @@ Partial Class WithdrawForm
         Me.txtAmount.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtAmount.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtAmount.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtAmount.ForeColor = System.Drawing.Color.White
         Me.txtAmount.Location = New System.Drawing.Point(440, 220)
         Me.txtAmount.Name = "txtAmount"
         Me.txtAmount.Size = New System.Drawing.Size(100, 27)
@@ -104,17 +116,6 @@ Partial Class WithdrawForm
         Me.lblTitle.Size = New System.Drawing.Size(197, 40)
         Me.lblTitle.TabIndex = 16
         Me.lblTitle.Text = "Withdraw"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(308, 179)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(211, 14)
-        Me.Label1.TabIndex = 22
-        Me.Label1.Text = "Current balance: Ksh. 500,000"
         '
         'WithdrawForm
         '
@@ -136,5 +137,5 @@ Partial Class WithdrawForm
     Friend WithEvents txtAmount As TextBox
     Friend WithEvents btnExit As Button
     Friend WithEvents btnWithdraw As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lblBalance As Label
 End Class
