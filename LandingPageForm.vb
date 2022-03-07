@@ -5,6 +5,7 @@ Public Class LandingPageForm
     Public Shared Property conn As New MySqlConnection(connectionString:="server=localhost;user id=root;password=beatsbydre;database=atmdb")
 
     Public Shared Property IdNumber As String
+    Public Shared Property FirstName As String
     Private Sub lblWelcome_Click(sender As Object, e As EventArgs) Handles lblWelcome.Click
 
     End Sub
@@ -25,14 +26,15 @@ Public Class LandingPageForm
             Dim query = "SELECT * FROM users WHERE IdNumber='" & txtId.Text & "' AND Pin='" & txtPin.Text & "';"
             Dim cmd = New MySqlCommand(query, conn)
             Dim adapter As MySqlDataAdapter = New MySqlDataAdapter(cmd)
-            Dim result As DataSet = New DataSet()
+            Dim result As DataTable = New DataTable()
             adapter.Fill(result)
 
             Dim count As Integer
-            count = result.Tables(0).Rows.Count
+            count = result.Rows.Count
             If count = 0 Then
                 MessageBox.Show("Wrong Id number or Pin code!")
             Else
+                FirstName = result(0)(0)
                 IdNumber = txtId.Text
                 Me.Visible = False
                 Dim home As New HomeForm

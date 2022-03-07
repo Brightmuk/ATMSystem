@@ -57,11 +57,11 @@ Partial Class HomeForm
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Verdana", 24.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
         Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
-        Me.lblTitle.Location = New System.Drawing.Point(329, 26)
+        Me.lblTitle.Location = New System.Drawing.Point(130, 25)
         Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(178, 40)
+        Me.lblTitle.Size = New System.Drawing.Size(538, 40)
         Me.lblTitle.TabIndex = 14
-        Me.lblTitle.Text = "Transact"
+        Me.lblTitle.Text = "Hello Bright, At your service"
         '
         'btnDeposit
         '

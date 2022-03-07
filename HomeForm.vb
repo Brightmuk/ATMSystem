@@ -54,4 +54,8 @@
         landing.Show()
 
     End Sub
+
+    Private Sub HomeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        lblTitle.Text = "Hello " & LandingPageForm.FirstName & ", at your service!"
+    End Sub
 End Class
