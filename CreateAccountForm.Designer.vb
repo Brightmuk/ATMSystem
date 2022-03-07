@@ -23,12 +23,12 @@ Partial Class CreateAccountForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.pnlTheme = New System.Windows.Forms.Panel()
+        Me.datePicker = New System.Windows.Forms.DateTimePicker()
         Me.lblLogin = New System.Windows.Forms.Label()
         Me.lblHasAccount = New System.Windows.Forms.Label()
         Me.txtPin = New System.Windows.Forms.TextBox()
         Me.lblPin = New System.Windows.Forms.Label()
         Me.btnSignUp = New System.Windows.Forms.Button()
-        Me.txtDateOfBirth = New System.Windows.Forms.TextBox()
         Me.txtKraPin = New System.Windows.Forms.TextBox()
         Me.txtLastName = New System.Windows.Forms.TextBox()
         Me.txtIdNumber = New System.Windows.Forms.TextBox()
@@ -45,12 +45,12 @@ Partial Class CreateAccountForm
         'pnlTheme
         '
         Me.pnlTheme.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.pnlTheme.Controls.Add(Me.datePicker)
         Me.pnlTheme.Controls.Add(Me.lblLogin)
         Me.pnlTheme.Controls.Add(Me.lblHasAccount)
         Me.pnlTheme.Controls.Add(Me.txtPin)
         Me.pnlTheme.Controls.Add(Me.lblPin)
         Me.pnlTheme.Controls.Add(Me.btnSignUp)
-        Me.pnlTheme.Controls.Add(Me.txtDateOfBirth)
         Me.pnlTheme.Controls.Add(Me.txtKraPin)
         Me.pnlTheme.Controls.Add(Me.txtLastName)
         Me.pnlTheme.Controls.Add(Me.txtIdNumber)
@@ -68,12 +68,27 @@ Partial Class CreateAccountForm
         Me.pnlTheme.Size = New System.Drawing.Size(805, 456)
         Me.pnlTheme.TabIndex = 0
         '
+        'datePicker
+        '
+        Me.datePicker.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.datePicker.CalendarFont = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.datePicker.CalendarForeColor = System.Drawing.Color.White
+        Me.datePicker.CalendarMonthBackground = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.datePicker.CalendarTitleBackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
+        Me.datePicker.CalendarTitleForeColor = System.Drawing.Color.White
+        Me.datePicker.CustomFormat = "dd,MM,yy"
+        Me.datePicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.datePicker.Location = New System.Drawing.Point(285, 244)
+        Me.datePicker.Name = "datePicker"
+        Me.datePicker.Size = New System.Drawing.Size(100, 22)
+        Me.datePicker.TabIndex = 20
+        '
         'lblLogin
         '
         Me.lblLogin.AutoSize = True
         Me.lblLogin.Cursor = System.Windows.Forms.Cursors.Hand
         Me.lblLogin.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.lblLogin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblLogin.Location = New System.Drawing.Point(430, 408)
         Me.lblLogin.Name = "lblLogin"
         Me.lblLogin.Size = New System.Drawing.Size(43, 14)
@@ -96,6 +111,7 @@ Partial Class CreateAccountForm
         Me.txtPin.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtPin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtPin.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtPin.ForeColor = System.Drawing.Color.White
         Me.txtPin.Location = New System.Drawing.Point(595, 239)
         Me.txtPin.Name = "txtPin"
         Me.txtPin.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
@@ -115,7 +131,7 @@ Partial Class CreateAccountForm
         '
         'btnSignUp
         '
-        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnSignUp.BackColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnSignUp.Location = New System.Drawing.Point(368, 343)
         Me.btnSignUp.Name = "btnSignUp"
@@ -124,21 +140,12 @@ Partial Class CreateAccountForm
         Me.btnSignUp.Text = "Sign up"
         Me.btnSignUp.UseVisualStyleBackColor = False
         '
-        'txtDateOfBirth
-        '
-        Me.txtDateOfBirth.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
-        Me.txtDateOfBirth.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.txtDateOfBirth.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.txtDateOfBirth.Location = New System.Drawing.Point(285, 239)
-        Me.txtDateOfBirth.Name = "txtDateOfBirth"
-        Me.txtDateOfBirth.Size = New System.Drawing.Size(100, 27)
-        Me.txtDateOfBirth.TabIndex = 14
-        '
         'txtKraPin
         '
         Me.txtKraPin.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtKraPin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtKraPin.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtKraPin.ForeColor = System.Drawing.Color.White
         Me.txtKraPin.Location = New System.Drawing.Point(595, 168)
         Me.txtKraPin.Name = "txtKraPin"
         Me.txtKraPin.Size = New System.Drawing.Size(100, 27)
@@ -149,6 +156,7 @@ Partial Class CreateAccountForm
         Me.txtLastName.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtLastName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtLastName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtLastName.ForeColor = System.Drawing.Color.White
         Me.txtLastName.Location = New System.Drawing.Point(595, 94)
         Me.txtLastName.Name = "txtLastName"
         Me.txtLastName.Size = New System.Drawing.Size(100, 27)
@@ -159,6 +167,7 @@ Partial Class CreateAccountForm
         Me.txtIdNumber.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtIdNumber.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtIdNumber.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtIdNumber.ForeColor = System.Drawing.Color.White
         Me.txtIdNumber.Location = New System.Drawing.Point(285, 168)
         Me.txtIdNumber.Name = "txtIdNumber"
         Me.txtIdNumber.Size = New System.Drawing.Size(100, 27)
@@ -169,6 +178,7 @@ Partial Class CreateAccountForm
         Me.txtFirstName.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(15, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.txtFirstName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.txtFirstName.Font = New System.Drawing.Font("Verdana", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.txtFirstName.ForeColor = System.Drawing.Color.White
         Me.txtFirstName.Location = New System.Drawing.Point(285, 94)
         Me.txtFirstName.Name = "txtFirstName"
         Me.txtFirstName.Size = New System.Drawing.Size(100, 27)
@@ -233,7 +243,7 @@ Partial Class CreateAccountForm
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Verdana", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblTitle.Location = New System.Drawing.Point(265, 25)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(287, 38)
@@ -244,6 +254,7 @@ Partial Class CreateAccountForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.pnlTheme)
         Me.Name = "CreateAccountForm"
@@ -259,7 +270,6 @@ Partial Class CreateAccountForm
     Friend WithEvents txtPin As TextBox
     Friend WithEvents lblPin As Label
     Friend WithEvents btnSignUp As Button
-    Friend WithEvents txtDateOfBirth As TextBox
     Friend WithEvents txtKraPin As TextBox
     Friend WithEvents txtLastName As TextBox
     Friend WithEvents txtIdNumber As TextBox
@@ -271,4 +281,5 @@ Partial Class CreateAccountForm
     Friend WithEvents lblFirstName As Label
     Friend WithEvents lblLogin As Label
     Friend WithEvents lblHasAccount As Label
+    Friend WithEvents datePicker As DateTimePicker
 End Class

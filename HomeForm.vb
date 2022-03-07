@@ -42,8 +42,16 @@
     End Sub
 
     Private Sub btnMiniStatement_Click(sender As Object, e As EventArgs) Handles btnMiniStatement.Click
-        Dim mini As MiniStatementForm
+        Dim mini As New MiniStatementForm
         mini.Show()
+
+    End Sub
+
+    Private Sub btnLogout_Click(sender As Object, e As EventArgs) Handles btnLogout.Click
+        LandingPageForm.IdNumber = ""
+        Me.Close()
+        Dim landing As New LandingPageForm
+        landing.Show()
 
     End Sub
 End Class

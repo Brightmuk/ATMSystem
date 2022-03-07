@@ -56,7 +56,7 @@ Partial Class HomeForm
         '
         Me.lblTitle.AutoSize = True
         Me.lblTitle.Font = New System.Drawing.Font("Verdana", 24.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.lblTitle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.lblTitle.Location = New System.Drawing.Point(329, 26)
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(178, 40)
@@ -68,10 +68,10 @@ Partial Class HomeForm
         Me.btnDeposit.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnDeposit.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnDeposit.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnDeposit.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnDeposit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnDeposit.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnDeposit.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnDeposit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnDeposit.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnDeposit.Location = New System.Drawing.Point(453, 111)
         Me.btnDeposit.Name = "btnDeposit"
         Me.btnDeposit.Size = New System.Drawing.Size(184, 46)
@@ -84,10 +84,10 @@ Partial Class HomeForm
         Me.btnChangePin.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnChangePin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnChangePin.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnChangePin.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnChangePin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnChangePin.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnChangePin.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnChangePin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnChangePin.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnChangePin.Location = New System.Drawing.Point(453, 269)
         Me.btnChangePin.Name = "btnChangePin"
         Me.btnChangePin.Size = New System.Drawing.Size(184, 46)
@@ -100,10 +100,10 @@ Partial Class HomeForm
         Me.btnFastCash.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnFastCash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnFastCash.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnFastCash.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnFastCash.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnFastCash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnFastCash.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnFastCash.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnFastCash.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnFastCash.Location = New System.Drawing.Point(453, 188)
         Me.btnFastCash.Name = "btnFastCash"
         Me.btnFastCash.Size = New System.Drawing.Size(184, 46)
@@ -116,10 +116,10 @@ Partial Class HomeForm
         Me.btnMiniStatement.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnMiniStatement.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnMiniStatement.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnMiniStatement.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnMiniStatement.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnMiniStatement.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnMiniStatement.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnMiniStatement.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnMiniStatement.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnMiniStatement.Location = New System.Drawing.Point(156, 269)
         Me.btnMiniStatement.Name = "btnMiniStatement"
         Me.btnMiniStatement.Size = New System.Drawing.Size(184, 46)
@@ -132,10 +132,10 @@ Partial Class HomeForm
         Me.btnWithdrawCash.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnWithdrawCash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnWithdrawCash.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnWithdrawCash.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnWithdrawCash.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnWithdrawCash.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnWithdrawCash.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnWithdrawCash.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnWithdrawCash.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnWithdrawCash.Location = New System.Drawing.Point(156, 188)
         Me.btnWithdrawCash.Name = "btnWithdrawCash"
         Me.btnWithdrawCash.Size = New System.Drawing.Size(184, 46)
@@ -148,10 +148,10 @@ Partial Class HomeForm
         Me.btnBalanceEnquiry.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(60, Byte), Integer))
         Me.btnBalanceEnquiry.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center
         Me.btnBalanceEnquiry.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.btnBalanceEnquiry.FlatAppearance.BorderColor = System.Drawing.Color.Pink
+        Me.btnBalanceEnquiry.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnBalanceEnquiry.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnBalanceEnquiry.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btnBalanceEnquiry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.btnBalanceEnquiry.ForeColor = System.Drawing.Color.FromArgb(CType(CType(212, Byte), Integer), CType(CType(175, Byte), Integer), CType(CType(55, Byte), Integer))
         Me.btnBalanceEnquiry.Location = New System.Drawing.Point(156, 111)
         Me.btnBalanceEnquiry.Name = "btnBalanceEnquiry"
         Me.btnBalanceEnquiry.Size = New System.Drawing.Size(184, 46)
@@ -161,7 +161,7 @@ Partial Class HomeForm
         '
         'btnLogout
         '
-        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.btnLogout.BackColor = System.Drawing.Color.FromArgb(CType(CType(245, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(86, Byte), Integer))
         Me.btnLogout.FlatAppearance.BorderColor = System.Drawing.Color.Pink
         Me.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.btnLogout.Font = New System.Drawing.Font("Verdana", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
@@ -185,7 +185,7 @@ Partial Class HomeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.SystemColors.ButtonHighlight
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(32, Byte), Integer), CType(CType(19, Byte), Integer), CType(CType(53, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(800, 450)
         Me.Controls.Add(Me.pnlHome)
         Me.Name = "HomeForm"
