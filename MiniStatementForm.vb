@@ -4,7 +4,7 @@ Public Class MiniStatementForm
     Public Sub GetTransactions()
         Try
             LandingPageForm.conn.Open()
-            Dim query = "SELECT TransactionId, Type, Amount, Date FROM transactions WHERE owner='" & LandingPageForm.IdNumber & "';"
+            Dim query = "SELECT TransactionId, Type, Amount, CreationDate FROM transactions WHERE owner='" & LandingPageForm.IdNumber & "';"
 
             Dim Sda As New MySqlDataAdapter
             Dim transactionsData As New DataTable
